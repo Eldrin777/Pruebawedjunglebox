@@ -1,0 +1,249 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Nunito Sans', sans-serif;
+
+}
+
+.contenedor {
+    padding: 40px 0px;
+    width: 90%;
+    max-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+}
+
+.titulo{
+    color: black;
+    font-size: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.cabezera > img {
+    padding: 27px 0px 0px 70px;
+    float: left;
+}
+
+nav{
+    text-align: right;
+    padding: 30px 50px 0px 0px;
+    font-size: 20px;
+}
+
+nav > a {
+    color: #00594D;
+    font-weight: 400;
+    text-decoration: none;
+    margin-right: 30px;
+}
+
+nav > a:hover {
+    text-decoration: underline;
+}
+
+/*header*/
+html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+
+      body {
+        background: #eee;
+        font-family: 'Nunito Sans', sans-serif;
+        font-size: 14px;
+        color: #000;
+        margin: 0;
+        padding: 0;
+      }
+
+      .swiper {
+        width: 100%;
+        height: 100%;
+      }
+
+      .swiper-slide {
+        text-align: center;
+        font-size: 18px;
+        background: #fff;
+
+        /* Center slide text vertically */
+        display: -webkit-box;
+        display: -ms-flexbox;
+        display: -webkit-flex;
+        display: flex;
+        -webkit-box-pack: center;
+        -ms-flex-pack: center;
+        -webkit-justify-content: center;
+        justify-content: center;
+        -webkit-box-align: center;
+        -ms-flex-align: center;
+        -webkit-align-items: center;
+        align-items: center;
+      }
+
+      .swiper-slide img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+      }
+
+      .swiper {
+        margin-left: auto;
+        margin-right: auto;
+      }
+/*header*/
+
+/*servicios*/
+
+.galeria-port {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.imagen-port {
+    width: 24%;
+    height: 200px;
+    margin-bottom: 25px;
+    overflow: hidden;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 0 6px o rgba(0, 0, 0, .5);
+}
+
+.imagen-port > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    }
+
+    .hover-galeria {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+       transform: scale(0);
+        background: hsla(28, 8%, 64%, 0.281);
+        transition: transform .5s;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .hover-galeria img {
+        width: 50px;
+    }
+
+    .imagen-port:hover .hover-galeria {
+        transform: scale(1);
+    }
+
+    .servicio-ind {
+        justify-content: space-evenly;
+        text-align: center;
+        color: #0F594E;
+    }
+
+/*nosotros*/
+.contenido-textos {
+justify-content: space-evenly;
+text-align: center;
+margin-bottom: 40px;
+}
+
+/*contacto*/
+.contenedor-contac-info {
+display: flex;
+margin-right: 200px;
+}
+
+.form {
+    background-color: #C8C589;
+    width: 90%;
+    max-width: 400px;
+    border-radius: 1em;
+    padding: 3.5em 1.5em;
+    margin: auto;
+}
+
+
+.form-container  {
+    width: 100%;
+    display: grid;
+    gap: 1em;
+    grid-auto-columns: 100%;
+    margin-right: 50px;
+    
+}
+
+.form-cta {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    background-color: orangered;
+    color: white;
+    border: none;
+    font-weight: 300;
+    padding: .7em 0;
+    border-radius: 1.2em;
+    cursor: pointer;
+    font-weight: 400;
+}
+
+.form-input {
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+    outline: none;
+    border: none;
+    border: 1px solid gray;
+}
+
+.form-input-form-input--message{
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 1rem;
+    padding: .8em 1em;
+}
+
+/*footer*/
+
+.titulo-final {
+    text-align: center;
+    font-size: 15px;
+    margin: 20px;
+  }
+
+  @media screen and (max-width: 900px) {
+      header {
+          background-position: center;
+      }
+.contenedor-contac-info {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+}
+
+/*servicios*/
+.imagen-port {
+    width: 44%;
+}
+
+nav {
+    text-align: center;
+    padding: 30px 0 0 0 ;
+}
+
+nav > a {
+    margin-right: 5px;
+}
+
+  }
